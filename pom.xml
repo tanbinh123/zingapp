@@ -87,6 +87,15 @@
                         <version>1.2.6.RELEASE</version>
                     </dependency>
                 </dependencies>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
